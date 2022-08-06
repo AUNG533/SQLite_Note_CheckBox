@@ -48,7 +48,8 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
         child: GestureDetector(
           onTap: () {},
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 40.0, vertical: 80.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 40.0, vertical: 80.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -134,6 +135,23 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
                             });
                           },
                           value: _priority,
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.symmetric(vertical: 20.0),
+                        height: 60.0,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).primaryColor,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            btnText,
+                            style: const TextStyle(
+                                color: Colors.white, fontSize: 20.0),
+                          ),
                         ),
                       ),
                     ],
