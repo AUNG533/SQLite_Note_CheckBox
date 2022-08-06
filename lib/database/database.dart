@@ -5,9 +5,9 @@ import 'package:sqflite/sqflite.dart';
 import 'package:sql_note_check_box/models/note_model.dart';
 
 class DatabaseHelper {
-  static final DatabaseHelper _instance = DatabaseHelper.internal();
+  static final DatabaseHelper instance = DatabaseHelper.internal();
 
-  factory DatabaseHelper() => _instance;
+  factory DatabaseHelper() => instance;
 
   Database? _db;
 
