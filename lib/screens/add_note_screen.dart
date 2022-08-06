@@ -146,12 +146,14 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: ElevatedButton(
-                          onPressed: () {},
                           child: Text(
                             btnText,
                             style: const TextStyle(
-                                color: Colors.white, fontSize: 20.0),
+                              color: Colors.white,
+                              fontSize: 20.0,
+                            ),
                           ),
+                          onPressed: () {},
                         ),
                       ),
                     ],
